@@ -42,7 +42,7 @@
 </footer>
 
 <footer class="page-footer -secondary">
-    2016 © Bad Man Apps Ltd.
+    <?php the_field('copyright'); ?>
 </footer>
 
 <script>
