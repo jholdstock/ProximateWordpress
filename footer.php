@@ -14,7 +14,7 @@
                 <div class="block__body">
                     <ul class="list list--footer">
                         <li class="list__item">
-                            <a href="#" class="list__link">Terms and Conditions</a>
+                            <a href="#" class="list__link">Blog</a>
                         </li>
                     </ul>
                 </div>
@@ -32,7 +32,7 @@
                 <div class="block__body">
                     <ul class="list list--footer">
                         <li class="list__item">
-                            <a href="#" class="list__link">Follow us</a>
+                            <a href="#" class="list__link">Future Developments</a>
                         </li>
                     </ul>
                 </div>
