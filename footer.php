@@ -1,32 +1,52 @@
-    <footer id="footer">
-
-        <div class="container">
-            <div data-scroll-reveal="enter bottom and move 10px over 1.2s">
-                <p data-scroll-reveal="enter over 3.2s">
-                    Copyright &copy; Bad Man Apps Ltd. 2016
-                </p>
+<footer class="page-footer -primary">
+    <div class="page-footer__inner">
+        <div class="four -spaced">
+            <div class="block block--footer four__item">
+                <div class="block__body">
+                    <ul class="list list--footer">
+                        <li class="list__item">
+                            <a href="/" class="list__link">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block block--footer four__item">
+                <div class="block__body">
+                    <ul class="list list--footer">
+                        <li class="list__item">
+                            <a href="#" class="list__link">Terms and Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block block--footer four__item">
+                <div class="block__body">
+                    <ul class="list list--footer">
+                        <li class="list__item">
+                            <a href="#" class="list__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block block--footer four__item">
+                <div class="block__body">
+                    <ul class="list list--footer">
+                        <li class="list__item">
+                            <a href="#" class="list__link">Follow us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </footer>
-    
-	<?php wp_footer(); ?>
-    
-    <script>
-        $(function() {
-            window.scrollReveal = new scrollReveal();
-            "use strict";
+    </div>
+</footer>
 
-            // PreLoader
-            $(window).load(function() {
-                $(".loader").fadeOut(400);
-            });
+<footer class="page-footer -secondary">
+    2016 © Bad Man Apps Ltd.
+</footer>
 
-            // Backstretchs
-            $("#header").backstretch("<?php echo get_template_directory_uri() ?>/images/3.jpg");
-            $("#services").backstretch("<?php echo get_template_directory_uri() ?>/images/3.jpg");
-
-        });
-    </script>
+<script>
+</script>
 
 </body>
 </html>
