@@ -165,7 +165,7 @@ hr {
 }
 .container,
 .page-header__inner,
-.page-footer__inner,
+.jh-footer-menu,
 .section--default,
 .page-content,
 .page-content--narrow,
@@ -180,7 +180,7 @@ hr {
 }
 .container:after,
 .page-header__inner:after,
-.page-footer__inner:after,
+.jh-footer-menu:after,
 .section--default:after,
 .page-content:after,
 .page-content--narrow:after,
@@ -196,7 +196,7 @@ hr {
 @media (min-width: 768px) and (max-width: 1095px) {
     .container,
     .page-header__inner,
-    .page-footer__inner,
+    .jh-footer-menu,
     .section--default {
         width: 100%
     }
@@ -204,7 +204,7 @@ hr {
 @media (min-width: 1096px) {
     .container,
     .page-header__inner,
-    .page-footer__inner,
+    .jh-footer-menu,
     .section--default {
         width: 1050px
     }
@@ -212,7 +212,7 @@ hr {
 @media (max-width: 767px) {
     .container,
     .page-header__inner,
-    .page-footer__inner,
+    .jh-footer-menu,
     .section--default {
         padding-left: 12px;
         padding-right: 12px
@@ -275,7 +275,6 @@ hr {
     }
 }
 .page-title,
-.block--blurb .block__title,
 .block--post .block__title {
     font-size: 26px;
     line-height: 31px;
@@ -288,14 +287,6 @@ hr {
     line-height: 26px;
     color: #32373b;
     font-weight: 400
-}
-.page-title--blog,
-.block--footer .block__title {
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    font-weight: 600
 }
 .block--icon .block__title {
     font-size: 16px;
@@ -332,7 +323,6 @@ hr {
     padding-top: 45px;
     padding-bottom: 176px
 }
-.block--blurb .block__body,
 .block--post .block__body {
     font-size: 18px;
     line-height: 30px
@@ -352,38 +342,19 @@ hr {
 .three--default {
     margin-bottom: 24px
 }
-.four__item {
-    float: left
+.jh-footer-menu li {
+    float: left;
+    display: inline-block;
 }
 @media (min-width: 768px) {
-    .four__item {
+    .jh-footer-menu li {
         width: 24.9%
     }
 }
-.four__item.-span3 {
-    width: 74.9%
-}
 @media (max-width: 767px) {
-    .four__item.-span3 {
-        float: none
-    }
-}
-@media (max-width: 767px) {
-    .four__item {
+    .jh-footer-menu li {
         width: 49%
     }
-}
-@media (max-width: 767px) {
-    .page-footer.-secondary .four__item {
-        width: 100%;
-        margin-bottom: 12px
-    }
-    .page-footer.-secondary .four__item:last-child {
-        margin-bottom: 0
-    }
-}
-.four.-spaced .four__item {
-    box-sizing: border-box
 }
 .row {
     display: table
@@ -529,19 +500,20 @@ hr {
     }
 }
 .page-footer {
+    list-style-type: none;
     width: 100%;
     color: #eee;
     font-size: 16px;
     line-height: 16px
 }
 @media (min-width: 768px) and (max-width: 1095px) {
-    .page-footer__inner {
+    .jh-footer-menu {
         padding-right: 20px;
         padding-left: 20px
     }
 }
 @media (max-width: 767px) {
-    .page-footer__inner {
+    .jh-footer-menu {
         width: auto;
         padding-left: 24px;
         padding-right: 24px
@@ -713,15 +685,15 @@ hr {
     margin-bottom: 0 !important
 }
 @media (max-width: 767px) {
-    .list--footer {
+    .jh-footer-menu li {
         margin-bottom: 12px
     }
 }
-.list--footer .list__link {
+.jh-footer-menu li a {
     color: #888
 }
 @media (max-width: 767px) {
-    .list--footer .list__link {
+    .jh-footer-menu li a {
         display: block;
         padding-top: 8px;
         padding-bottom: 8px
@@ -1097,8 +1069,7 @@ hr {
         padding-top: 28px;
         padding-bottom: 68px
     }
-    .block--blurb,
-    .notice {
+        .notice {
         padding-right: 24px
     }
 }
