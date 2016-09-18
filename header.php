@@ -18,4 +18,8 @@
         
     
     <body <?php body_class(); ?>>
-        <div class="jh-top-color-strip jh-proximate-bg"></div>
+    <div id="wrapper">
+        <div id="header">
+            <div class="jh-top-color-strip jh-proximate-bg"></div>
+        </div>
+        <div id="content">

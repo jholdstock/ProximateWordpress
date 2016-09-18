@@ -1,8 +1,24 @@
-* {
-    margin: 0;
+html,
+body {
+    margin : 0;
     padding: 0;
-    border: 0;
-    vertical-align: baseline
+    height : 100%;
+}
+#wrapper {
+    min-height: 100%;
+    position  : relative;
+}
+#header {
+}
+#content {
+    padding-bottom: 117px;   /* Height of the footer element */
+}
+#footer {
+    width   : 100%;
+    height  : 117px;
+    position: absolute;
+    bottom  : 0;
+    left    : 0;
 }
 
 html {
@@ -40,7 +56,6 @@ a {
     width: 100%;
     box-sizing: border-box;
     color: #fff;
-    transition: background-color .5s ease;
     height: 58px;
     position: relative;
     padding-top: 7px;
@@ -70,6 +85,10 @@ a {
         padding-left: 12px;
         padding-right: 12px;
     }
+}
+.jh-footer-menu ul {
+    margin: 0;
+    padding: 0;
 }
 .jh-footer-menu li {
     float: left;
