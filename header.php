@@ -22,5 +22,5 @@
     <!-- Actual from template site: -->
     <body class="page--index">
 
-        <div class="jh-top-color-strip">
+        <div class="jh-top-color-strip jh-proximate-bg">
         </div>

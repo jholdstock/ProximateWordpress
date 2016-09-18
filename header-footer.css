@@ -1,0 +1,79 @@
+/* Top strip */
+.jh-top-color-strip {
+    width: 100%;
+    box-sizing: border-box;
+    color: #fff;
+    transition: background-color .5s ease;
+    height: 58px;
+    position: relative;
+    padding-top: 7px;
+    padding-left: 18px;
+    padding-right: 18px;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Footer menu */
+.jh-footer-menu {
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 10px;
+    background-color: #eee;
+    list-style-type: none;
+    width: 100%;
+    font-size: 16px;
+    line-height: 16px;
+    width: 100%;
+}
+@media (max-width: 767px) {
+    .jh-footer-menu {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+.jh-footer-menu li {
+    float: left;
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 12px;
+}
+@media (min-width: 768px) {
+    .jh-footer-menu li {
+        width: 25%;
+        margin-bottom: 0px;
+    }
+}
+.jh-footer-menu li a {
+    color: #777;
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px
+}
+
+/* Copyright */
+.jh-copyright {
+    padding: 23px 0;
+    text-align: center;
+    list-style-type: none;
+    width: 100%;
+    color: #eee;
+    font-size: 16px;
+    line-height: 16px
+}
+
+/* Reusable */
+.clearfix:after {
+    display: table;
+    clear: both;
+    content: " ";
+}
+.jh-proximate-bg {
+    background: #f29100; /* Old browsers */
+    background: -moz-linear-gradient(left,  #f29100 0%, #e61b72 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #f29100 0%,#e61b72 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #f29100 0%,#e61b72 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f29100', endColorstr='#e61b72',GradientType=1 ); /* IE6-9 */
+}
