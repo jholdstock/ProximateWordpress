@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="section section--hero">
-    <div class="block block--hero">
+    <div class="block--hero">
         <div class="block__inner">
             <img id="proximate-logo"src="<?php echo get_template_directory_uri() ?>/images/proximate-logo.png" />
             <h1 class="jh-slogan-1">
@@ -12,8 +12,8 @@
             </div>
             <a href="#" onclick="alert('Not yet idiot');return false;//TODO" class="button button--primary block__action">Download now</a>
         </div>
-        <div class="block__img">
-            <div class="hero-phone"></div>
+        <div class="jh-hero-phone-img">
+            <img src="<?php echo get_template_directory_uri() ?>/images/phone1.png" class="hero-phone" />
         </div>
     </div>
 </div>

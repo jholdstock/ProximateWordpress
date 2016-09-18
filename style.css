@@ -21,12 +21,7 @@ body {
     font-smooth: always;
     position: relative
 }
-@media (min-width: 768px) and (max-width: 1095px) {
-    body {
-        padding-top: 74px
-    }
-}
-@media (min-width: 1096px) {
+@media (min-width: 768px) {
     body {
         padding-top: 91px
     }
@@ -39,26 +34,8 @@ body {
 a {
     text-decoration: none
 }
-.jh-footer-menu,
-.page-content,
-.page-content--narrow,
-.page-content--single,
-.page-main__inner,
-.features,
-.section--more,
-.section--hero {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative
-}
-.jh-footer-menu:after,
-.page-content:after,
-.page-content--narrow:after,
-.page-content--single:after,
-.page-main__inner:after,
-.features:after,
-.section--more:after,
-.section--hero:after {
+
+.jh-footer-menu:after {
     display: table;
     clear: both;
     content: " "
@@ -392,9 +369,6 @@ a {
     content: " "
 }
 .hero-phone {
-    background-image: url(images/phone1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
     position: relative;
     margin: 0 auto;
 }
@@ -430,10 +404,6 @@ a {
         letter-spacing: .04px;
         margin-bottom: 15px
     }
-    .block--hero .block__img {
-        overflow: hidden;
-        margin-bottom: 0
-    }
     .block--hero .jh-slogan-2 {
         font-size: 15px;
         line-height: 22px;
@@ -453,19 +423,15 @@ a {
 	width: 275px;
 }
 
-
  /*Desktop view*/
 @media (min-width: 768px) {
-		.block__inner #proximate-logo {
+	.block__inner #proximate-logo {
         width: 450px;
     }
     .block--hero {
         display: table-row
     }
-    .block--hero .block__inner {
-        padding-right: 40px
-    }
-    .block--hero .block__img {
+    .jh-hero-phone-img {
         display: table-cell;
         vertical-align: middle
     }
@@ -481,14 +447,8 @@ a {
         opacity: .78;
         margin-bottom: 12px
     }
-    .block--hero .block__action--badge,
     .block--hero .button--primary {
         display: none
-    }
-}
-@media (min-width: 1096px) {
-    .block__hero .block__inner {
-        padding-right: 120px
     }
 }
 @media (max-width: 767px) {
@@ -500,12 +460,12 @@ a {
 @media (min-width: 768px) {
     .section--hero {
         padding-bottom: 66px;
-        width: 630px;
     }
-}
-@media (min-width: 1096px) {
+    .block__hero .block__inner {
+        padding-right: 120px;
+    }
     .section--hero {
-        width: 788px
+        width: 1000px
     }
 }
 
