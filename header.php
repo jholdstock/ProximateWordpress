@@ -20,11 +20,7 @@
     <!-- <body <?php body_class(); ?>> -->
 
     <!-- Actual from template site: -->
-    <body class="page page--index" id="top">
+    <body class="page--index">
 
-        <div class="header page-header--index">
-            <header class="page-header page-header--index">
-                <div class="page-header__inner">
-                </div>
-            </header>
+        <div class="jh-top-color-strip">
         </div>

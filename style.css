@@ -1,132 +1,17 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+* {
     margin: 0;
     padding: 0;
     border: 0;
     vertical-align: baseline
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section {
-    display: block
-}
-body {
-    line-height: 1
-}
-blockquote,
-q {
-    quotes: none
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none
-}
-a:hover,
-a:active {
-    outline: none
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0
-}
+
 html {
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
     overflow-y: scroll;
-overflow-x: hidden;
+    overflow-x: hidden;
 }
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     background-color: #fff;
@@ -136,35 +21,25 @@ body {
     font-smooth: always;
     position: relative
 }
+@media (min-width: 768px) and (max-width: 1095px) {
+    body {
+        padding-top: 74px
+    }
+}
+@media (min-width: 1096px) {
+    body {
+        padding-top: 91px
+    }
+}
+@media (max-width: 767px) {
+    body {
+        padding-top: 61px
+    }
+}
 a {
     text-decoration: none
 }
-hr {
-    border: none;
-    border-bottom: 1px solid #e7e7e7
-}
-.left {
-    float: left !important
-}
-.right {
-    float: right !important
-}
-.clearfix:after,
-.three:after,
-.two:after,
-.four:after,
-.sitenav:after,
-.block:after,
-.toolbar:after,
-.breadcrumbs:after,
-.section:after,
-.side:after {
-    display: table;
-    clear: both;
-    content: " "
-}
 .container,
-.page-header__inner,
 .jh-footer-menu,
 .section--default,
 .page-content,
@@ -179,7 +54,6 @@ hr {
     position: relative
 }
 .container:after,
-.page-header__inner:after,
 .jh-footer-menu:after,
 .section--default:after,
 .page-content:after,
@@ -195,7 +69,6 @@ hr {
 }
 @media (min-width: 768px) and (max-width: 1095px) {
     .container,
-    .page-header__inner,
     .jh-footer-menu,
     .section--default {
         width: 100%
@@ -203,7 +76,6 @@ hr {
 }
 @media (min-width: 1096px) {
     .container,
-    .page-header__inner,
     .jh-footer-menu,
     .section--default {
         width: 1050px
@@ -211,7 +83,6 @@ hr {
 }
 @media (max-width: 767px) {
     .container,
-    .page-header__inner,
     .jh-footer-menu,
     .section--default {
         padding-left: 12px;
@@ -288,16 +159,6 @@ hr {
     color: #32373b;
     font-weight: 400
 }
-.block--icon .block__title {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px
-}
-.page-header__title {
-    font-size: 17px;
-    line-height: 26px;
-    font-weight: 500
-}
 @media (min-width: 1096px) {
     .page-content--single,
     .page-content--single-wide {
@@ -327,17 +188,10 @@ hr {
     font-size: 18px;
     line-height: 30px
 }
-.block--icon .block__body,
 .block--default .block__body,
 .block--text .block__body {
     font-size: 16px;
     line-height: 26px
-}
-.post-date,
-.notice,
-.title-location {
-    font-size: 14px;
-    line-height: 20px
 }
 .three--default {
     margin-bottom: 24px
@@ -374,15 +228,7 @@ hr {
         display: block !important
     }
 }
-.header {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-sizing: border-box
-}
-.page-header {
+.jh-top-color-strip {
     background: #f29100; /* Old browsers */
     background: -moz-linear-gradient(left,  #f29100 0%, #e61b72 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left,  #f29100 0%,#e61b72 100%); /* Chrome10-25,Safari5.1-6 */
@@ -392,119 +238,17 @@ hr {
     width: 100%;
     box-sizing: border-box;
     color: #fff;
-    transition: background-color .5s ease
-}
-.fixed .page-header {
-    background-color: rgba(30, 190, 165, 0.96)
-}
-.page-header {
-	  height: 54px;
-	  padding-top: 7px;
-	  padding-left: 18px;
-	  padding-right: 18px
-}
-@media (max-width: 767px) {
-    .page-header {
-        padding-right: 7px
-    }
-}
-.page-header a {
-    color: #fff
-}
-.page-header__title {
-    margin-top: 5px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    margin-left: 20px;
-    float: left;
-    width: calc(100% - 100px)
-}
-.platform-bb .page-header__title {
-    display: inline-block;
-    max-width: 160px
-}
-@media (min-width: 768px) {
-    .page-header__title {
-        display: none
-    }
-}
-.page-header__menu {
-    float: right;
-    cursor: pointer
-}
-@media (min-width: 768px) {
-    .page-header__menu {
-        display: none
-    }
-}
-@media (min-width: 1096px) {
-    .page-header__nav {
-        padding-top: 19px;
-        float: right
-    }
-}
-@media (min-width: 768px) and (max-width: 1095px) {
-    .page-header__nav {
-        padding-top: 18px;
-        float: none;
-        width: 100%;
-        padding-right: 9%;
-        padding-left: 9%;
-        box-sizing: border-box
-    }
-}
-@media (max-width: 890px) {
-    .page-header__nav {
-        padding-right: 6%;
-        padding-left: 8%
-    }
-}
-@media (max-width: 767px) {
-    .page-header__nav {
-        display: none
-    }
-}
-.page-header__language {
-    padding-top: 19px;
-    cursor: pointer;
-    float: right
-}
-@media (max-width: 767px) {
-    .page-header__language {
-        display: none
-    }
-}
-@media (max-width: 767px) {
-    .page-header--index {
-        position: relative;
-        height: 58px
-    }
-    .page-header--index .page-header__logo {
-        width: 77px;
-        height: 77px;
-        background-size: auto 77px;
-        position: absolute;
-        top: 44px;
-        left: 50%;
-        margin-left: -36px;
-        pointer-events: none;
-        cursor: default
-    }
-    .page-header--index .page-header__title {
-        display: none
-    }
-    .page-header--index .page-header__logo svg {
-        height: 77px;
-        width: auto
-    }
-}
-.page-footer {
-    list-style-type: none;
+    transition: background-color .5s ease;
+    height: 58px;
+    position: relative;
+    padding-top: 7px;
+    padding-left: 18px;
+    padding-right: 18px;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    color: #eee;
-    font-size: 16px;
-    line-height: 16px
 }
 @media (min-width: 768px) and (max-width: 1095px) {
     .jh-footer-menu {
@@ -519,18 +263,23 @@ hr {
         padding-right: 24px
     }
 }
-.page-footer.-primary {
+.jh-footer-primary {
     text-align: center;
     padding-top: 13px;
     padding-bottom: 10px;
-    background-color: #eee
+    background-color: #eee;
+    list-style-type: none;
+    width: 100%;
+    color: #eee;
+    font-size: 16px;
+    line-height: 16px
 }
 @media (max-width: 767px) {
-    .page-footer.-primary {
+    .jh-footer-primary {
         padding-bottom: 20px
     }
 }
-.page-footer.-secondary {
+.jh-copyright {
     background: #f29100; /* Old browsers */
     background: -moz-linear-gradient(left,  #f29100 0%, #e61b72 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left,  #f29100 0%,#e61b72 100%); /* Chrome10-25,Safari5.1-6 */
@@ -538,6 +287,11 @@ hr {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f29100', endColorstr='#e61b72',GradientType=1 ); /* IE6-9 */
     padding: 23px 0;
     text-align: center;
+    list-style-type: none;
+    width: 100%;
+    color: #eee;
+    font-size: 16px;
+    line-height: 16px
 }
 
 .feature {
@@ -748,16 +502,6 @@ hr {
 .page--blog .page-content {
     padding-top: 44px
 }
-.post-date {
-    padding: 6px 10px;
-    background-color: #f5f5f5;
-    display: inline-block;
-    color: rgba(0, 0, 0, 0.65);
-    border-radius: 4px
-}
-.post-date a {
-    color: rgba(0, 0, 0, 0.65)
-}
 .section--more {
     text-align: center
 }
@@ -795,71 +539,17 @@ hr {
 .button--s {
     padding: 18px 36px
 }
-.button--xs {
-    font-size: 15px;
-    line-height: 23px;
-    padding: 12px 24px
-}
 .img {
     display: inline-block;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: contain
 }
-.hint {
-    font-size: 14px;
-    line-height: 22px;
-    color: rgba(65, 74, 83, 0.4)
-}
-.hint a {
-    color: rgba(65, 74, 83, 0.4);
-    text-decoration: underline
-}
-@media (min-width: 768px) and (max-width: 1095px) {
-    body {
-        padding-top: 74px
-    }
-}
-@media (min-width: 1096px) {
-    body {
-        padding-top: 91px
-    }
-}
-@media (max-width: 767px) {
-    body {
-        padding-top: 61px
-    }
-}
+
 @media (max-width: 767px) {
     body.page--index {
         padding-top: 0
     }
-}
-.middle {
-    vertical-align: middle
-}
-.muted {
-    color: #b4b8b7 !important
-}
-.notice {
-    color: #b4b8b7
-}
-.notice hr {
-    margin-bottom: 56px
-}
-.notice p {
-    margin-bottom: 32px
-}
-.notice a {
-    color: #5b5f62
-}
-.notice *:last-child {
-    margin-bottom: 0
-}
-.title-location {
-    color: #b4b8b7;
-    margin-bottom: 32px;
-    margin-top: 6px
 }
 .title {
     margin-bottom: 24px
@@ -968,19 +658,6 @@ hr {
         line-height: 22px;
         margin-bottom: 40px
     }
-    .block--hero .block__hint {
-        position: absolute;
-        bottom: -44px;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        box-sizing: border-box;
-        padding-left: 35px;
-        padding-right: 35px;
-        z-index: 100;
-        color: rgba(0, 0, 0, 0.42);
-        font-size: 12px
-    }
     .block--hero .block__action {
         display: inline-block;
         margin-bottom: 40px;
@@ -1026,12 +703,6 @@ hr {
     .block--hero .block__action--badge,
     .block--hero .button--primary {
         display: none
-    }
-    .block--hero .block__hint {
-        font-size: 12px;
-        line-height: 18px;
-        opacity: .3;
-        margin-bottom: 24px
     }
 }
 @media (min-width: 1096px) {
@@ -1079,7 +750,7 @@ hr {
 }
 @media (max-width: 767px) {
     .page--join .actions {
-        text-align: center
+        text-align: center;
     }
 }
 @media (min-width: 768px) and (max-width: 1095px) {
