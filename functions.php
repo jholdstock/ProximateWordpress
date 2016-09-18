@@ -5,8 +5,12 @@ function root($path) {
 }
 
 function load_resources() {
-		wp_enqueue_style('style', get_stylesheet_uri());
-		wp_enqueue_style('header-footer', root("/header-footer.css"));
+
+		wp_enqueue_style('style', root("/style.css"));
+
+		if (is_page("home-page")) {
+			wp_enqueue_style('front-page', root("/front-page.css"));
+		}
         
     wp_enqueue_script("jquery-1.12.1.min.js", root("/js/jquery-1.12.1.min.js"), array(), false, true);
 }

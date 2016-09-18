@@ -3,14 +3,14 @@
 <div class="section section--hero">
     <div class="block--hero">
         <div class="block__inner">
-            <img id="proximate-logo"src="<?php echo get_template_directory_uri() ?>/images/proximate-logo.png" />
+            <img id="jh-proximate-logo"src="<?php echo get_template_directory_uri() ?>/images/proximate-logo.png" />
             <h1 class="jh-slogan-1">
                 <?php the_field('slogan_1'); ?>
             </h1>
             <div class="jh-slogan-2">
                 <?php the_field("slogan_2"); ?>
             </div>
-            <a href="#" onclick="alert('Not yet idiot');return false;//TODO" class="button button--primary block__action">Download now</a>
+            <a href="#" onclick="alert('Not yet idiot');return false;//TODO" class="jh-download-button">Download now</a>
         </div>
         <div class="jh-hero-phone-img">
             <img src="<?php echo get_template_directory_uri() ?>/images/phone1.png" class="hero-phone" />
@@ -40,8 +40,8 @@
     </div>
 </div>
 
-<div class="section section--more">
-    <a href="#" onclick="alert('Not yet idiot');return false;//TODO" class="button button--primary block__action">Download now</a>
+<div class="section jh-download-section">
+    <a href="#" onclick="alert('Not yet idiot');return false;//TODO" class="jh-download-button">Download now</a>
 </div>
 
 <?php get_footer(); ?>
