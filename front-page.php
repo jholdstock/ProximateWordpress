@@ -21,25 +21,45 @@
 <div class="section section--features">
     <div class="section__inner">
         <div class="feature jh-feature-left section__item">
-            <div class="feature__inner">
-                <h1 class="feature__title"><?php the_field('left_subtitle'); ?></h1>
-                <div class="feature__text"><?php the_field('left_paragraph'); ?></div>
-            </div>
+            <h1 class="feature__title"><?php the_field('left_subtitle'); ?></h1>
+            <div class="feature__text"><?php the_field('left_paragraph'); ?></div>
             <div class="feature__img"></div>
         </div>
         <div class="section__divider"></div>
         <div class="feature jh-feature-right section__item">
-            <div class="feature__inner">
-                <div class="feature__img">
-                    <img src="<?php echo get_template_directory_uri() ?>/images/radius.png" width="272" height="272" />
-                </div>
-                <h1 class="feature__title"><?php the_field('right_subtitle'); ?></h1>
-                <div class="feature__text"><?php the_field('right_paragraph'); ?></div>
+            <div class="feature__img">
+                <img src="<?php echo get_template_directory_uri() ?>/images/radius.png" width="272" height="272" />
             </div>
+            <h1 class="feature__title"><?php the_field('right_subtitle'); ?></h1>
+            <div class="feature__text"><?php the_field('right_paragraph'); ?></div>
+            
         </div>
     </div>
 </div>
-
+<div class="section section--features section--friendsandfamily">
+    <div class="section__inner">
+        <div class="feature section__item">
+            <h1 class="circle pink">Friends.</h1>
+            <div class="feature__text under_circle"><?php the_field('friends_paragraph'); ?></div>
+        </div>
+        <div class="section__divider"></div>
+        <div class="feature section__item">
+            <h1 class="circle orange">Family.</h1>
+            <div class="feature__text under_circle"><?php the_field('family_paragraph'); ?></div>
+        </div>
+    </div>
+</div>
+<div class="section section--features section--mapbg">
+    <div class="section__inner">
+        <div class="feature section__item">
+            <div class="feature__text pill">Later versions will allow the use of cheap, long life GPS sensors that you can fit onto a young child or baby’s clothes to ensure you know where they are 100% of the time.</div>
+        </div>
+        <div class="section__divider"></div>
+        <div class="feature section__item">
+            <div class="feature__text pill">To further improve communication the next revision of the app will include intergroup messaging either private or group wide.</div>
+        </div>
+    </div>
+</div>
 <div class="section jh-download-section">
     <a href="#" onclick="alert('Not yet idiot');return false;//TODO" class="jh-download-button">Download now</a>
 </div>

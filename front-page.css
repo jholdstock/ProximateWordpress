@@ -50,7 +50,7 @@
 @media (min-width: 768px) {
     #jh-proximate-logo {
         width: 450px;
-        padding-top:70px;
+        padding-top:20px;
     }
     .block--hero {
         display: table-row
@@ -60,13 +60,14 @@
         vertical-align: middle
     }
     .block--hero .jh-slogan-1 {
-        font-size: 33px;
-        line-height: 35px;
+        font-size: 40px;
+        line-height: 40px;
         font-weight: 300;
-        margin-bottom: 24px
+        margin-bottom: 24px;
+        opacity: .88;
     }
     .block--hero .jh-slogan-2 {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 26px;
         opacity: .78;
         margin-bottom: 12px
@@ -106,9 +107,10 @@
 .feature {
     text-align: center;
     position: relative;
-    vertical-align: middle;
     padding-top: 58px;
-    padding-bottom: 52px
+    padding-bottom: 52px;
+    padding-left: 18px;
+    padding-right: 18px
 }
 @media (min-width: 768px) {
     .feature {
@@ -116,35 +118,16 @@
         margin-bottom: 24px
     }
 }
-@media (max-width: 767px) {
-    .feature__inner {
-        padding-left: 8%;
-        padding-right: 8%
-    }
-}
-@media (min-width: 768px) and (max-width: 1095px) {
-    .feature__inner {
-        margin-right: 9%;
-        margin-left: 9%
-    }
-}
-@media (min-width: 1096px) {
-    .feature__inner {
-        margin-left: 12%;
-        margin-right: 12%
-    }
-}
 .feature__title {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 300;
     line-height: 29px;
     letter-spacing: .05em;
     margin-bottom: 25px
 }
 .feature__text {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 21px;
-    margin-bottom: 50px
 }
 .jh-feature-left {
     background-color: rgba(242, 145, 0, 0.36);
@@ -244,8 +227,8 @@
 }
 @media (min-width: 768px) {
     .jh-download-section {
-        padding-top: 84px;
-        padding-bottom: 84px
+        padding-top: 64px;
+        padding-bottom: 64px
     }
 }
 .jh-download-button {
@@ -260,4 +243,46 @@
     white-space: nowrap;
     background-color: #e61b72;
     color: #fff !important;
+}
+
+
+/* Friends and Family section */
+.circle {
+    font-size    : 45px;
+    width        : 275px;
+    height       : 275px;
+    line-height  : 275px;
+    border-radius: 50%;
+    color        : #fff;
+    text-align   : center;
+    background   : #000;
+    margin       : 0 auto;
+}
+.orange {
+    background   : #f29100;
+}
+.pink {
+    background   : #e61b72;
+}
+.under_circle {
+    padding-top: 26px;
+    font-size: 18px;
+}
+
+.section--mapbg {
+    background-image: url(images/Untitled-233.png);
+    background-color: rgba(255,255,255,0.1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    width: 100%;
+}
+.pill {
+    padding: 16px;
+    width: 300px;
+    border-radius: 15px;
+    color        : #777;
+    text-align   : center;
+    background   : #fff;
+    margin       : 0 auto;   
 }
