@@ -284,9 +284,13 @@
     justify-content: center;
 }
 
-.mapbg-container {
-    flex-basis: 26%;
+.section--mapbg i {
+    margin-right: 15px;
+}
 
+.mapbg-container {
+    flex-basis: 30%;
+    display: flex;
     color: white;
     text-align: left;
 }

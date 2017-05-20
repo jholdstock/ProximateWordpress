@@ -51,24 +51,39 @@
 </div>
 <div class="section section--features section--mapbg">
     <div class="feature mapbg-container">
-        <div class="feature__title mapbg-header"><?php the_field('map_bg_header_1'); ?></div>
-        <div class="feature__text mapbg-paragraph"><?php the_field('map_bg_paragraph_1'); ?></div>
+        <i class="fa fa-map-marker fa-4x"></i>
+        <div>
+            <div class="feature__title mapbg-header"><?php the_field('map_bg_header_1'); ?></div>
+            <div class="feature__text mapbg-paragraph"><?php the_field('map_bg_paragraph_1'); ?></div>
+        </div>
     </div>
     <div class="feature mapbg-container">
-        <div class="feature__title mapbg-header"><?php the_field('map_bg_header_2'); ?></div>
-        <div class="feature__text mapbg-paragraph"><?php the_field('map_bg_paragraph_2'); ?></div>
+        <i class="fa fa-commenting fa-4x"></i>
+        <div>
+            <div class="feature__title mapbg-header"><?php the_field('map_bg_header_2'); ?></div>
+            <div class="feature__text mapbg-paragraph"><?php the_field('map_bg_paragraph_2'); ?></div>
+        </div>
     </div>
     <div class="feature mapbg-container">
-        <div class="feature__title mapbg-header"><?php the_field('map_bg_header_3'); ?></div>
-        <div class="feature__text mapbg-paragraph"><?php the_field('map_bg_paragraph_3'); ?></div>
+        <i class="fa fa-globe fa-4x"></i>
+        <div>
+            <div class="feature__title mapbg-header"><?php the_field('map_bg_header_3'); ?></div>
+            <div class="feature__text mapbg-paragraph"><?php the_field('map_bg_paragraph_3'); ?></div>
+        </div>
     </div>
     <div class="feature mapbg-container">
-        <div class="feature__title mapbg-header"><?php the_field('map_bg_header_4'); ?></div>
-        <div class="feature__text mapbg-paragraph"><?php the_field('map_bg_paragraph_4'); ?></div>
+        <i class="fa fa-users fa-4x"></i>
+        <div>
+            <div class="feature__title mapbg-header"><?php the_field('map_bg_header_4'); ?></div>
+            <div class="feature__text mapbg-paragraph"><?php the_field('map_bg_paragraph_4'); ?></div>
+        </div>
     </div>
     <div class="feature mapbg-container">
-        <div class="feature__title mapbg-header"><?php the_field('map_bg_header_5'); ?></div>
-        <div class="feature__text mapbg-paragraph"><?php the_field('map_bg_paragraph_5'); ?></div>
+        <i class="fa fa-exclamation-triangle fa-4x"></i>
+        <div>
+            <div class="feature__title mapbg-header"><?php the_field('map_bg_header_5'); ?></div>
+            <div class="feature__text mapbg-paragraph"><?php the_field('map_bg_paragraph_5'); ?></div>
+        </div>
     </div>
 </div>
 <div class="section jh-download-section">
