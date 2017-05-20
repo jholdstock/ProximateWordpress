@@ -297,7 +297,7 @@
     margin-right:10px;
     flex-basis: 25%;
     min-width: 350px;
-    min-width: 450px;
+    max-width: 450px;
     display: flex;
     color: white;
     text-align: left;
