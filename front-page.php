@@ -50,18 +50,29 @@
     </div>
 </div>
 <div class="section section--features section--mapbg">
-    <div class="section__inner">
-        <div class="feature section__item">
-            <div class="feature__text pill">Later versions will allow the use of cheap, long life GPS sensors that you can fit onto a young child or baby’s clothes to ensure you know where they are 100% of the time.</div>
-        </div>
-        <div class="section__divider"></div>
-        <div class="feature section__item">
-            <div class="feature__text pill">To further improve communication the next revision of the app will include intergroup messaging either private or group wide.</div>
-        </div>
+    <div class="feature mapbg-container">
+        <div class="feature__title mapbg-header"><?php the_field('map_bg_header_1'); ?></div>
+        <div class="feature__text mapbg-paragraph"><?php the_field('map_bg_paragraph_1'); ?></div>
+    </div>
+    <div class="feature mapbg-container">
+        <div class="feature__title mapbg-header"><?php the_field('map_bg_header_2'); ?></div>
+        <div class="feature__text mapbg-paragraph"><?php the_field('map_bg_paragraph_2'); ?></div>
+    </div>
+    <div class="feature mapbg-container">
+        <div class="feature__title mapbg-header"><?php the_field('map_bg_header_3'); ?></div>
+        <div class="feature__text mapbg-paragraph"><?php the_field('map_bg_paragraph_3'); ?></div>
+    </div>
+    <div class="feature mapbg-container">
+        <div class="feature__title mapbg-header"><?php the_field('map_bg_header_4'); ?></div>
+        <div class="feature__text mapbg-paragraph"><?php the_field('map_bg_paragraph_4'); ?></div>
+    </div>
+    <div class="feature mapbg-container">
+        <div class="feature__title mapbg-header"><?php the_field('map_bg_header_5'); ?></div>
+        <div class="feature__text mapbg-paragraph"><?php the_field('map_bg_paragraph_5'); ?></div>
     </div>
 </div>
 <div class="section jh-download-section">
-    <a href="#" onclick="alert('Not yet idiot');return false;//TODO" class="jh-download-button">Download now</a>
+    <a href="#" onclick="alert('Proximate is coming soon');return false;//TODO" class="jh-download-button">Download now</a>
 </div>
 
 <?php get_footer(); ?>
