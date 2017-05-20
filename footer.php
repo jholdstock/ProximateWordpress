@@ -1,6 +1,7 @@
             </div> <!-- content -->
-            <div id="footer">
-            <!-- TODO when we have other pages -->
+            <div id="footer" style="height:inherit;">
+            <!-- TODO remove the inline style above. -->
+            <!-- TODO when we have other pages. -->
                 <!-- <?php wp_nav_menu( array( 
                     'theme_location' => 'footer-menu',
                     'container_class' => 'jh-footer-menu clearfix'
