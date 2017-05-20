@@ -10,7 +10,7 @@
             <div class="jh-slogan-2">
                 <?php the_field("slogan_2"); ?>
             </div>
-            <a href="#" onclick="alert('Not yet idiot');return false;//TODO" class="jh-download-button">Download now</a>
+            <a href="#" onclick="alert('Proximate is coming soon');return false;//TODO" class="jh-download-button">Download now</a>
         </div>
         <div class="jh-hero-phone-img">
             <img src="<?php echo get_template_directory_uri() ?>/images/phone1.png" class="hero-phone" />

@@ -2,6 +2,11 @@
     position: relative;
     margin: 0 auto;
 }
+
+.hero-phone, .block__inner {
+    display: inline-block;
+}
+
 @media (min-width: 1096px) {
     .hero-phone {
         width: 318px;
@@ -46,14 +51,18 @@
     width: 275px;
 }
 
- /*Desktop view*/
+/*Desktop view*/
 @media (min-width: 768px) {
     #jh-proximate-logo {
         width: 450px;
         padding-top:20px;
     }
+    .block__inner {
+        margin-right: 30px;
+    }
     .block--hero {
-        display: table-row
+        display: table;
+        margin: 0 auto;
     }
     .jh-hero-phone-img {
         display: table-cell;
@@ -70,10 +79,7 @@
         font-size: 18px;
         line-height: 26px;
         opacity: .78;
-        margin-bottom: 12px
-    }
-    .block--hero .jh-download-button {
-        display: none
+        margin-bottom: 12px;
     }
 }
 @media (max-width: 767px) {
