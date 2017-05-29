@@ -2,6 +2,11 @@
     position: relative;
     margin: 0 auto;
 }
+
+.hero-phone, .block__inner {
+    display: inline-block;
+}
+
 @media (min-width: 1096px) {
     .hero-phone {
         width: 318px;
@@ -46,14 +51,18 @@
     width: 275px;
 }
 
- /*Desktop view*/
+/*Desktop view*/
 @media (min-width: 768px) {
     #jh-proximate-logo {
         width: 450px;
         padding-top:20px;
     }
+    .block__inner {
+        margin-right: 50px;
+    }
     .block--hero {
-        display: table-row
+        display: table;
+        margin: 0 auto;
     }
     .jh-hero-phone-img {
         display: table-cell;
@@ -70,10 +79,7 @@
         font-size: 18px;
         line-height: 26px;
         opacity: .78;
-        margin-bottom: 12px
-    }
-    .block--hero .jh-download-button {
-        display: none
+        margin-bottom: 36px;
     }
 }
 @media (max-width: 767px) {
@@ -115,7 +121,6 @@
 @media (min-width: 768px) {
     .feature {
         width: 50%;
-        margin-bottom: 24px
     }
 }
 .feature__title {
@@ -269,20 +274,47 @@
     font-size: 18px;
 }
 
-.section--mapbg {
+.jh-map-background {
     background-image: url(images/Untitled-233.jpg);
-    background-color: rgba(255,255,255,0.1);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% auto;
+    background-size: cover;
     width: 100%;
 }
-.pill {
-    padding: 16px;
-    width: 300px;
-    border-radius: 15px;
-    color        : #777;
-    text-align   : center;
-    background   : #fff;
-    margin       : 0 auto;   
+
+.section--mapbg {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.section--mapbg i {
+    margin-right: 15px;
+}
+
+.mapbg-container {
+    margin-left:10px;
+    margin-right:10px;
+    flex-basis: 25%;
+    min-width: 350px;
+    max-width: 450px;
+    display: flex;
+    color: white;
+    text-align: left;
+}
+
+.mapbg-header {
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+.mapbg-paragraph {
+}
+
+.proxi-pink {
+    color: #e61b72;
+}
+.proxi-orange {
+    color: #f29100;
 }

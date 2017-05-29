@@ -10,7 +10,7 @@
             <div class="jh-slogan-2">
                 <?php the_field("slogan_2"); ?>
             </div>
-            <a href="#" onclick="alert('Not yet idiot');return false;//TODO" class="jh-download-button">Download now</a>
+            <a href="#" onclick="alert('Proximate is coming soon');return false;//TODO" class="jh-download-button">Download now</a>
         </div>
         <div class="jh-hero-phone-img">
             <img src="<?php echo get_template_directory_uri() ?>/images/phone1.png" class="hero-phone" />
@@ -49,19 +49,47 @@
         </div>
     </div>
 </div>
-<div class="section section--features section--mapbg">
-    <div class="section__inner">
-        <div class="feature section__item">
-            <div class="feature__text pill">Later versions will allow the use of cheap, long life GPS sensors that you can fit onto a young child or baby’s clothes to ensure you know where they are 100% of the time.</div>
+<div class="jh-map-background" >
+<div class="section section--mapbg" style="background-color: rgba(0,0,0,0.4);">
+        <div class="feature mapbg-container">
+            <i class="fa fa-map-marker fa-4x proxi-orange"></i>
+            <div>
+                <div class="feature__title mapbg-header"><?php the_field('map_bg_header_1'); ?></div>
+                <div class="feature__text mapbg-paragraph"><?php the_field('map_bg_paragraph_1'); ?></div>
+            </div>
         </div>
-        <div class="section__divider"></div>
-        <div class="feature section__item">
-            <div class="feature__text pill">To further improve communication the next revision of the app will include intergroup messaging either private or group wide.</div>
+        <div class="feature mapbg-container">
+            <i class="fa fa-commenting fa-4x proxi-orange"></i>
+            <div>
+                <div class="feature__title mapbg-header"><?php the_field('map_bg_header_2'); ?></div>
+                <div class="feature__text mapbg-paragraph"><?php the_field('map_bg_paragraph_2'); ?></div>
+            </div>
+        </div>
+        <div class="feature mapbg-container">
+            <i class="fa fa-globe fa-4x proxi-orange"></i>
+            <div>
+                <div class="feature__title mapbg-header"><?php the_field('map_bg_header_3'); ?></div>
+                <div class="feature__text mapbg-paragraph"><?php the_field('map_bg_paragraph_3'); ?></div>
+            </div>
+        </div>
+        <div class="feature mapbg-container">
+            <i class="fa fa-users fa-4x proxi-orange"></i>
+            <div>
+                <div class="feature__title mapbg-header"><?php the_field('map_bg_header_4'); ?></div>
+                <div class="feature__text mapbg-paragraph"><?php the_field('map_bg_paragraph_4'); ?></div>
+            </div>
+        </div>
+        <div class="feature mapbg-container">
+            <i class="fa fa-exclamation-triangle fa-4x proxi-orange"></i>
+            <div>
+                <div class="feature__title mapbg-header"><?php the_field('map_bg_header_5'); ?></div>
+                <div class="feature__text mapbg-paragraph"><?php the_field('map_bg_paragraph_5'); ?></div>
+            </div>
         </div>
     </div>
 </div>
 <div class="section jh-download-section">
-    <a href="#" onclick="alert('Not yet idiot');return false;//TODO" class="jh-download-button">Download now</a>
+    <a href="#" onclick="alert('Proximate is coming soon');return false;//TODO" class="jh-download-button">Download now</a>
 </div>
 
 <?php get_footer(); ?>

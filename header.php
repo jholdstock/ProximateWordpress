@@ -6,18 +6,18 @@
 
         <title><?php bloginfo('name'); ?></title>
 
-        <meta name="google-site-verification" content="//TODO" />
-
         <!-- Gmail verification -->
         <meta name="google-site-verification" content="O3n4PtNp0UtaJAM1cmRyrwPzlBaKcPMSUIr8bmz2erk" />
 
 
         <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.ico" />
+        <script src="https://use.fontawesome.com/a132e67a0c.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
         <meta http-equiv="X-UA-Compatible" content="IE=9" />
         <script>
             //TODO Analytics
         </script>
+        <script src="https://use.fontawesome.com/a132e67a0c.js"></script>
         <?php wp_head(); ?>
     </head>
         
